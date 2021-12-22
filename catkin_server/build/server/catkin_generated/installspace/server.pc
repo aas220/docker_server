@@ -1,0 +1,8 @@
+prefix=/home/aas220/catkin_server/install
+
+Name: server
+Description: Description of server
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lserver
+Requires: message_runtime roscpp rospy std_msgs

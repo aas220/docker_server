@@ -1,0 +1,2 @@
+server
+-DCATKIN_DEVEL_PREFIX=/home/aas220/catkin_server/devel -DCMAKE_INSTALL_PREFIX=/home/aas220/catkin_server/install -G Unix Makefiles
