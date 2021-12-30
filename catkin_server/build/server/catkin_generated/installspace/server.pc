@@ -1,4 +1,4 @@
-prefix=/home/aas220/catkin_server/install
+prefix=/home/aas220/docker_server/catkin_server/install
 
 Name: server
 Description: Description of server

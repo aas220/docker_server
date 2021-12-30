@@ -2,7 +2,7 @@
 
 message(STATUS "server: 1 messages, 1 services")
 
-set(MSG_I_FLAGS "-Iserver:/home/aas220/catkin_server/src/server/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iserver:/home/aas220/docker_server/catkin_server/src/server/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(server_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg" NAME_WE)
 add_custom_target(_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "server" "/home/aas220/catkin_server/src/server/msg/Num.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "server" "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg" ""
 )
 
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
 add_custom_target(_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "server" "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "server" "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv" ""
 )
 
 #
@@ -34,7 +34,7 @@ add_custom_target(_server_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(server
-  "/home/aas220/catkin_server/src/server/msg/Num.msg"
+  "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/server
@@ -42,7 +42,7 @@ _generate_msg_cpp(server
 
 ### Generating Services
 _generate_srv_cpp(server
-  "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv"
+  "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/server
@@ -60,9 +60,9 @@ add_custom_target(server_generate_messages_cpp
 add_dependencies(server_generate_messages server_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg" NAME_WE)
 add_dependencies(server_generate_messages_cpp _server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(server_generate_messages_cpp _server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,7 +75,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS server_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(server
-  "/home/aas220/catkin_server/src/server/msg/Num.msg"
+  "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/server
@@ -83,7 +83,7 @@ _generate_msg_eus(server
 
 ### Generating Services
 _generate_srv_eus(server
-  "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv"
+  "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/server
@@ -101,9 +101,9 @@ add_custom_target(server_generate_messages_eus
 add_dependencies(server_generate_messages server_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg" NAME_WE)
 add_dependencies(server_generate_messages_eus _server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(server_generate_messages_eus _server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,7 +116,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS server_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(server
-  "/home/aas220/catkin_server/src/server/msg/Num.msg"
+  "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/server
@@ -124,7 +124,7 @@ _generate_msg_lisp(server
 
 ### Generating Services
 _generate_srv_lisp(server
-  "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv"
+  "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/server
@@ -142,9 +142,9 @@ add_custom_target(server_generate_messages_lisp
 add_dependencies(server_generate_messages server_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg" NAME_WE)
 add_dependencies(server_generate_messages_lisp _server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(server_generate_messages_lisp _server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,7 +157,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS server_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(server
-  "/home/aas220/catkin_server/src/server/msg/Num.msg"
+  "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/server
@@ -165,7 +165,7 @@ _generate_msg_nodejs(server
 
 ### Generating Services
 _generate_srv_nodejs(server
-  "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv"
+  "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/server
@@ -183,9 +183,9 @@ add_custom_target(server_generate_messages_nodejs
 add_dependencies(server_generate_messages server_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg" NAME_WE)
 add_dependencies(server_generate_messages_nodejs _server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(server_generate_messages_nodejs _server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,7 +198,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS server_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(server
-  "/home/aas220/catkin_server/src/server/msg/Num.msg"
+  "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/server
@@ -206,7 +206,7 @@ _generate_msg_py(server
 
 ### Generating Services
 _generate_srv_py(server
-  "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv"
+  "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/server
@@ -224,9 +224,9 @@ add_custom_target(server_generate_messages_py
 add_dependencies(server_generate_messages server_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg" NAME_WE)
 add_dependencies(server_generate_messages_py _server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(server_generate_messages_py _server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

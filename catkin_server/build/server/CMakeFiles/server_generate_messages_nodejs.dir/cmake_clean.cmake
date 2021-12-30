@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/aas220/catkin_server/devel/share/gennodejs/ros/server/msg/Num.js"
-  "/home/aas220/catkin_server/devel/share/gennodejs/ros/server/srv/AddTwoInts.js"
+  "/home/aas220/docker_server/catkin_server/devel/share/gennodejs/ros/server/msg/Num.js"
+  "/home/aas220/docker_server/catkin_server/devel/share/gennodejs/ros/server/srv/AddTwoInts.js"
   "CMakeFiles/server_generate_messages_nodejs"
 )
 

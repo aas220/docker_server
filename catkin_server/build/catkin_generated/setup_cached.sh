@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/aas220/catkin_server/build'
+export CMAKE_PREFIX_PATH="/home/aas220/docker_server/catkin_server/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/aas220/docker_server/catkin_server/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/aas220/docker_server/catkin_server/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/aas220/docker_server/catkin_server/src:$ROS_PACKAGE_PATH"

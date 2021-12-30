@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/aas220/catkin_server/devel/share/roseus/ros/server/manifest.l"
-  "/home/aas220/catkin_server/devel/share/roseus/ros/server/msg/Num.l"
-  "/home/aas220/catkin_server/devel/share/roseus/ros/server/srv/AddTwoInts.l"
+  "/home/aas220/docker_server/catkin_server/devel/share/roseus/ros/server/manifest.l"
+  "/home/aas220/docker_server/catkin_server/devel/share/roseus/ros/server/msg/Num.l"
+  "/home/aas220/docker_server/catkin_server/devel/share/roseus/ros/server/srv/AddTwoInts.l"
   "CMakeFiles/server_generate_messages_eus"
 )
 

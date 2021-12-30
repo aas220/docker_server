@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/aas220/catkin_server/devel/lib/server/add_two_ints_server"
-  "/home/aas220/catkin_server/devel/lib/server/add_two_ints_server.pdb"
+  "/home/aas220/docker_server/catkin_server/devel/lib/server/add_two_ints_server"
+  "/home/aas220/docker_server/catkin_server/devel/lib/server/add_two_ints_server.pdb"
   "CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o"
 )
 

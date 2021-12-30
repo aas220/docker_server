@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/aas220/catkin_server/devel/share/common-lisp/ros/server/msg/Num.lisp"
-  "/home/aas220/catkin_server/devel/share/common-lisp/ros/server/srv/AddTwoInts.lisp"
+  "/home/aas220/docker_server/catkin_server/devel/share/common-lisp/ros/server/msg/Num.lisp"
+  "/home/aas220/docker_server/catkin_server/devel/share/common-lisp/ros/server/srv/AddTwoInts.lisp"
   "CMakeFiles/server_generate_messages_lisp"
 )
 

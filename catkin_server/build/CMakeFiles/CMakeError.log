@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/aas220/catkin_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/aas220/docker_server/catkin_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_614da/fast && /usr/bin/make -f CMakeFiles/cmTC_614da.dir/build.make CMakeFiles/cmTC_614da.dir/build
-make[1]: Entering directory '/home/aas220/catkin_server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_614da.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_614da.dir/src.c.o   -c /home/aas220/catkin_server/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_614da
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_614da.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_614da.dir/src.c.o  -o cmTC_614da 
-/usr/bin/ld: CMakeFiles/cmTC_614da.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_d431a/fast && /usr/bin/make -f CMakeFiles/cmTC_d431a.dir/build.make CMakeFiles/cmTC_d431a.dir/build
+make[1]: Entering directory '/home/aas220/docker_server/catkin_server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d431a.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d431a.dir/src.c.o   -c /home/aas220/docker_server/catkin_server/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d431a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d431a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_d431a.dir/src.c.o  -o cmTC_d431a 
+/usr/bin/ld: CMakeFiles/cmTC_d431a.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_614da.dir/build.make:87: cmTC_614da] Error 1
-make[1]: Leaving directory '/home/aas220/catkin_server/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_614da/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_d431a.dir/build.make:87: cmTC_d431a] Error 1
+make[1]: Leaving directory '/home/aas220/docker_server/catkin_server/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d431a/fast] Error 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/aas220/catkin_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/aas220/docker_server/catkin_server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_73230/fast && /usr/bin/make -f CMakeFiles/cmTC_73230.dir/build.make CMakeFiles/cmTC_73230.dir/build
-make[1]: Entering directory '/home/aas220/catkin_server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_73230.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_73230.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_73230
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73230.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_73230.dir/CheckFunctionExists.c.o  -o cmTC_73230  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_c73a0/fast && /usr/bin/make -f CMakeFiles/cmTC_c73a0.dir/build.make CMakeFiles/cmTC_c73a0.dir/build
+make[1]: Entering directory '/home/aas220/docker_server/catkin_server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c73a0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c73a0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c73a0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c73a0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c73a0.dir/CheckFunctionExists.c.o  -o cmTC_c73a0  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_73230.dir/build.make:87: cmTC_73230] Error 1
-make[1]: Leaving directory '/home/aas220/catkin_server/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_73230/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_c73a0.dir/build.make:87: cmTC_c73a0] Error 1
+make[1]: Leaving directory '/home/aas220/docker_server/catkin_server/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c73a0/fast] Error 2
 
 
 

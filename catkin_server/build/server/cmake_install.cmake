@@ -1,8 +1,8 @@
-# Install script for directory: /home/aas220/catkin_server/src/server
+# Install script for directory: /home/aas220/docker_server/catkin_server/src/server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aas220/catkin_server/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aas220/docker_server/catkin_server/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,57 +38,57 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/msg" TYPE FILE FILES "/home/aas220/catkin_server/src/server/msg/Num.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/msg" TYPE FILE FILES "/home/aas220/docker_server/catkin_server/src/server/msg/Num.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/srv" TYPE FILE FILES "/home/aas220/catkin_server/src/server/srv/AddTwoInts.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/srv" TYPE FILE FILES "/home/aas220/docker_server/catkin_server/src/server/srv/AddTwoInts.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/cmake" TYPE FILE FILES "/home/aas220/catkin_server/build/server/catkin_generated/installspace/server-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/cmake" TYPE FILE FILES "/home/aas220/docker_server/catkin_server/build/server/catkin_generated/installspace/server-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/aas220/catkin_server/devel/include/server")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/aas220/docker_server/catkin_server/devel/include/server")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/aas220/catkin_server/devel/share/roseus/ros/server")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/aas220/docker_server/catkin_server/devel/share/roseus/ros/server")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/aas220/catkin_server/devel/share/common-lisp/ros/server")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/aas220/docker_server/catkin_server/devel/share/common-lisp/ros/server")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/aas220/catkin_server/devel/share/gennodejs/ros/server")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/aas220/docker_server/catkin_server/devel/share/gennodejs/ros/server")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/aas220/catkin_server/devel/lib/python3/dist-packages/server")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/aas220/docker_server/catkin_server/devel/lib/python3/dist-packages/server")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/aas220/catkin_server/devel/lib/python3/dist-packages/server")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/aas220/docker_server/catkin_server/devel/lib/python3/dist-packages/server")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aas220/catkin_server/build/server/catkin_generated/installspace/server.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aas220/docker_server/catkin_server/build/server/catkin_generated/installspace/server.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/cmake" TYPE FILE FILES "/home/aas220/catkin_server/build/server/catkin_generated/installspace/server-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/cmake" TYPE FILE FILES "/home/aas220/docker_server/catkin_server/build/server/catkin_generated/installspace/server-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server/cmake" TYPE FILE FILES
-    "/home/aas220/catkin_server/build/server/catkin_generated/installspace/serverConfig.cmake"
-    "/home/aas220/catkin_server/build/server/catkin_generated/installspace/serverConfig-version.cmake"
+    "/home/aas220/docker_server/catkin_server/build/server/catkin_generated/installspace/serverConfig.cmake"
+    "/home/aas220/docker_server/catkin_server/build/server/catkin_generated/installspace/serverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server" TYPE FILE FILES "/home/aas220/catkin_server/src/server/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/server" TYPE FILE FILES "/home/aas220/docker_server/catkin_server/src/server/package.xml")
 endif()
 

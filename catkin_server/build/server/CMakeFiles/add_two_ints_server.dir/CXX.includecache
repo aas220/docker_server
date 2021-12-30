@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/aas220/catkin_server/devel/include/server/AddTwoInts.h
+/home/aas220/docker_server/catkin_server/devel/include/server/AddTwoInts.h
 ros/service_traits.h
 -
 server/AddTwoIntsRequest.h
@@ -14,7 +14,7 @@ server/AddTwoIntsRequest.h
 server/AddTwoIntsResponse.h
 -
 
-/home/aas220/catkin_server/devel/include/server/AddTwoIntsRequest.h
+/home/aas220/docker_server/catkin_server/devel/include/server/AddTwoIntsRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/aas220/catkin_server/devel/include/server/AddTwoIntsResponse.h
+/home/aas220/docker_server/catkin_server/devel/include/server/AddTwoIntsResponse.h
 string
 -
 vector
@@ -46,11 +46,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/aas220/catkin_server/src/server/src/add_two_ints_server.cpp
+/home/aas220/docker_server/catkin_server/src/server/src/add_two_ints_server.cpp
 ros/ros.h
-/home/aas220/catkin_server/src/server/src/ros/ros.h
+/home/aas220/docker_server/catkin_server/src/server/src/ros/ros.h
 server/AddTwoInts.h
-/home/aas220/catkin_server/src/server/src/server/AddTwoInts.h
+/home/aas220/docker_server/catkin_server/src/server/src/server/AddTwoInts.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/aas220/catkin_server/devel/include/server/AddTwoInts.h"
-  "/home/aas220/catkin_server/devel/include/server/Num.h"
+  "/home/aas220/docker_server/catkin_server/devel/include/server/AddTwoInts.h"
+  "/home/aas220/docker_server/catkin_server/devel/include/server/Num.h"
   "CMakeFiles/server_generate_messages_cpp"
 )
 
