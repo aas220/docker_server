@@ -1,0 +1,8 @@
+Commands to run
+sudo docker build -t <desired name>
+sudo docker run -it --network host <desired name> sample-image bash
+
+Once inside docker shell
+
+source /catkin_server/devel/setup.bash
+rosrun server add_two_ints_server
